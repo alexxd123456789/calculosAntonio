@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    margin: 2vmin auto;
+    min-width: 47vmin;
+}
+
+form{
+    display: flex;
+    width: 80%;
+    margin: 1vmin auto;
+}
+
+form > button{
+    width: 10%;
+}
+
+form > input{
+    width: 90%;
+}
+
+.global{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    grid-gap: 3vmin;
+    flex-wrap: wrap;
+}
+
+
+h1{
+    text-align: center;
+}
+
+h2{
+    display: flex;
+    justify-content: space-between;
+}
+
+span{
+    cursor: pointer;
+}

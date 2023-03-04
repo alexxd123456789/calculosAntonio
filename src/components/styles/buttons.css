@@ -1,0 +1,22 @@
+button{
+    box-shadow: 0;
+    border: 1px solid black;
+    background-color: rgb(226, 226, 226);
+    width: 100%;
+    font-size: 3vmin;
+    cursor: pointer;
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    border-collapse: collapse;
+    height: 60vmin;
+}
+
+.special{
+    background-color: orange;
+    grid-column: 4;
+    color: white;
+}

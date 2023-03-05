@@ -34,7 +34,7 @@ export const CalcProvider = ({children}) => {
     })
 
     localStorage.setItem('calculadoras', JSON.stringify(calculadoras.filter(calc => calc.id != calculadora.id)));
-
+    localStorage.removeItem(`${calculadora.id}`);
   }
 
   return (

@@ -5,9 +5,9 @@ import { Screen } from './Screen'
 
 export const Calculator = () => {
   return (
-    <OpProvider>
+    <div>
         <Screen/>
         <Buttons/>
-    </OpProvider>
+    </div>
   )
 }

@@ -26,7 +26,7 @@ export const CalcApp = () => {
             <div className="container" key={calc.id}>
               <h2>{index+1}. {calc.title} <span onClick={() => {onDelete(calc)}}><MdDelete/></span></h2>
               <OpProvider>
-                <Calculator/>
+                <Calculator id={calc.id}/>
               </OpProvider>
           </div>
           )

@@ -1,6 +1,6 @@
 import {evaluate} from 'mathjs';
 
-export const resultado = (operacion) => {
+export const resultado = (operacion = '') => {
     let result = '' 
     let err = false;
     let num = 0;
@@ -22,7 +22,7 @@ export const resultado = (operacion) => {
         }
     } while(err)
 
-    return result;
+    return result || '';
 
 
 }

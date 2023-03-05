@@ -6,10 +6,10 @@ export const opReducer = (operacion = '', action) => {
             return '';
         
         case types.append:
-            return operacion + action.payload;
+            return (operacion + action.payload).trimStart('0');
         
         case types.erase:
-            return operacion.slice(0, operacion.length - 1);
+            return operacion.slice(0, -1);
     
         case types.set:
             return action.payload.toString();

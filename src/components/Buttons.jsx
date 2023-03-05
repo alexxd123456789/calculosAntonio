@@ -11,13 +11,23 @@ export const Buttons = () => {
 
 
     const handleClick = ({target}) => {
-        switch(target.name){
+        let filtrar = target.name;
+        
+        
+        if(!filtrar){
+            filtrar = 'delete';
+        }
+        
+        
+        switch(filtrar){
             case 'AC':
                 reset();
                 break;
+
             case '=':
                 setOp(resultado(operacion))
                 break;
+
             case 'delete':
                 erase();
                 break;

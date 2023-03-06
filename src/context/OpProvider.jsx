@@ -12,15 +12,16 @@ export const OpProvider = ({children}) => {
 
   console.log(children)
   
-    const [operacion, dispatch] = useReducer(opReducer, '',() => init());
+    const [operacion, dispatch] = useReducer(opReducer, '',init);
 
     const append = (value) => {
-      dispatch({
-        type: types.append,
-        payload: value
-      })
-
-      localStorage.setItem(children.props.id, operacion+value);
+      if(operacion.length < 15){
+        dispatch({
+          type: types.append,
+          payload: value
+        })
+        localStorage.setItem(children.props.id, operacion+value);
+      }
     }
 
     const reset = () => {

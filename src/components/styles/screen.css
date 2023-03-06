@@ -7,6 +7,8 @@
     justify-items: end;
     align-items: end;
     padding: 1vmin;
+    grid-row: 0;
+    overflow: hidden;
 }
 
 .screen > p:nth-child(2){

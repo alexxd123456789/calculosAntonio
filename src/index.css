@@ -6,7 +6,7 @@
 
 .container{
     margin: 2vmin auto;
-    min-width: 47vmin;
+    width: 47vmin;
 }
 
 form{
@@ -17,10 +17,14 @@ form{
 
 form > button{
     width: 10%;
+    border-radius: 1vmin;
 }
 
 form > input{
     width: 90%;
+    border-radius: 1vmin;
+    padding: 1vmin;
+    background-color: transparent;
 }
 
 .global{
@@ -34,6 +38,7 @@ form > input{
 
 h1{
     text-align: center;
+    margin: 4vmin;
 }
 
 h2{

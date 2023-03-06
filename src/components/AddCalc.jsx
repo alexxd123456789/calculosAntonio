@@ -23,11 +23,9 @@ export const AddCalc = () => {
 
     }
     
-    
-    
   return (
     <form onSubmit={onSubmit}>
-        <input type="text" name="crearCalc" id="crearCalc" ref={titleRef} />
+        <input type="text" name="crearCalc" id="crearCalc" ref={titleRef} placeholder="Introduce el nombre de la calculadora"/>
         <button type='submit'>Añadir</button>
     </form>
   )
